@@ -1,13 +1,14 @@
+import '../css/Header.css';
 export default function Nav(){
     return (
         <nav>
             <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Menu</a></li>
-                <li><a>Reservations</a></li>
-                <li><a>Order Online</a></li>
-                <li><a>Login</a></li>
+                <li><a href="https://www.google.ca/">Home</a></li>
+                <li><a href="https://www.google.ca/">About</a></li>
+                <li><a href="https://www.google.ca/">Menu</a></li>
+                <li><a href="https://www.google.ca/">Reservations</a></li>
+                <li><a href="https://www.google.ca/">Order Online</a></li>
+                <li><a href="https://www.google.ca/">Login</a></li>
             </ul>
         </nav>
     );
