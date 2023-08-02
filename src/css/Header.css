@@ -1,5 +1,6 @@
 header{
     width: 100%;
+    font-weight: bold;
   }
   header img{
     width: 202px;
@@ -25,7 +26,6 @@ header{
     font-family: 'Karla', sans-serif;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
   }

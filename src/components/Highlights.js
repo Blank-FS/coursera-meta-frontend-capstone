@@ -27,7 +27,7 @@ export default function Highlights(){
     return(
         <div class="hlSection">
             <div class="title">
-                <h2 style={{ color: 'black' }}>This Weeks Special</h2>
+                <h2 style={{ color: 'black', fontWeight: '500' }}>This Weeks Specials!</h2>
                 <button type="button" id="menu" >Online Menu</button>
             </div>
             <div class="container">
