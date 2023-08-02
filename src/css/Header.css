@@ -1,37 +1,28 @@
 header{
-    grid-area: header;
-    display:flex;
-    align-items:center;
-  }
-  header div{
-    margin-left: 20%;
-    margin-right: 20%;
-    display:flex;
-    justify-content: center;
-    align-items:center;
+    width: 100%;
   }
   header img{
     width: 202px;
     height: 76px;
-    flex-shrink: 0;
-  }
-  nav{
-    margin-left: 5%;
   }
   nav ul{
     display: flex;
-    width: 640px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
     gap: 28px;
     align-items: center;
-    padding: 1%;
-    text-align:justify;
+    justify-content: center;
+    text-align: justify;
     list-style-type: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
   a{
     text-decoration: none;
   }
-  ul li{
-    font-family: Karla;
+  li{
+    font-family: 'Karla', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;

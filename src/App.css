@@ -1,26 +1,4 @@
-body {
-  display: grid;
-  grid-template-columns: 1440px;
-  grid-template-rows: 120px 2280px 400px;
-  grid-template-areas: "header" "main" "footer";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border:black solid;
-}
-/*Header*/
-
-/*Main*/
-main{
-  grid-area: main;
-  background-color: #5f5f5f;
-}
-/*Footer*/
-footer{
-  grid-area: footer;
-  background-color: #a2a2a2;
-  display:flex;
-}
-footer div{
-  flex: 1;
+.body {
+  display: flex;
+  flex-direction: column;
 }

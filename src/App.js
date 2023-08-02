@@ -7,11 +7,11 @@ import { ChakraProvider } from '@chakra-ui/react';
 function App() {
   return(
     <ChakraProvider>
-      <body>
+      <div class="body">
         <Header></Header>
         <Main></Main>
         <Footer></Footer>
-      </body>
+      </div>
     </ChakraProvider>
   );
 }

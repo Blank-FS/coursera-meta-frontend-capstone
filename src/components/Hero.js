@@ -3,7 +3,6 @@ import image from "../images/restauranfood.jpg";
 export default function Hero(){
     return(
         <div class="hero">
-            <div class="content">
                 <div class="info">
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
@@ -13,7 +12,6 @@ export default function Hero(){
                 <div class="image">
                     <img id="rf" src={image} alt="Restaurant Food" />
                 </div>
-            </div>
         </div>
     );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./Card";
 import "../css/Highlights.css";
-import { Box, Heading } from "@chakra-ui/react";
 import bruchetta from "../images/bruchetta.svg";
 const projects = [
     {
@@ -29,23 +28,17 @@ export default function Highlights(){
         <div class="hlSection">
             <div class="title">
                 <h2 style={{ color: 'black' }}>This Weeks Special</h2>
-                <button type="button" id="reserve" style={{marginLeft: 'auto'}} >Online Menu</button>
+                <button type="button" id="menu" >Online Menu</button>
             </div>
             <div class="container">
-                        <Box
-                        display="grid"
-                        gridTemplateColumns="repeat(3,minmax(0,1fr))"
-                        gridGap={8}
-                        >
-                            {projects.map((project) => (
-                                <Card
-                                key={project.title}
-                                title={project.title}
-                                description={project.description}
-                                imageSrc={project.getImageSrc()}
-                                />
-                            ))}
-                        </Box>
+                    {projects.map((project) => (
+                        <Card
+                        key={project.title}
+                        title={project.title}
+                        description={project.description}
+                        imageSrc={project.getImageSrc()}
+                        />
+                    ))}
             </div>
         </div>
     );

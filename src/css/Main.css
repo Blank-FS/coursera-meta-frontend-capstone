@@ -1,6 +1,4 @@
 main{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 410px 640px 590px 640px;
-    grid-template-areas: "hero" "highlights" "testimonials" "about";
+    display: flex;
+    flex-direction: column;
 }
