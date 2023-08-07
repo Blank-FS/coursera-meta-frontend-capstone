@@ -1,6 +1,7 @@
 header{
     width: 100%;
     font-weight: bold;
+    border-bottom: black solid;
   }
   header img{
     width: 202px;
