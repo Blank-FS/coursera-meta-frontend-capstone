@@ -2,6 +2,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    padding: 3%;
     border-bottom: black solid;
+}
+label{
+    font-weight: bold;
+    border-top: black solid;
+    font-family: Markazi Text;
+    font-size:24px;
+}
+#reserve-button{
+    background-color: #F4CE14;
+    font-family: Markazi Text;
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 16px;
+    font-weight: bold;
+}
+.availableTimes{
+    border-top: black solid;
+    color:black;
+    font-size: 16px;
+    font-weight: bold;
+    font-size:24px;
+    margin-bottom:20px;
+}
+select, input {
+    border: rgb(197, 197, 197) solid;
+    border-radius: 16px;
+    padding: 1%;
 }

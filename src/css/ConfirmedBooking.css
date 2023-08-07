@@ -1,0 +1,14 @@
+.confirmation{
+    border-bottom: black solid;
+    height: auto;
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10vh;
+}
+.confirmed {
+    color: black;
+    font-size: 64px;
+}

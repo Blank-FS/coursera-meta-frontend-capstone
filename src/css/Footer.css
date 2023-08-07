@@ -1,3 +1,15 @@
 footer{
-    background-color: #d9d9d9;
+    background-color: #495E57;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.footer-head{
+    font-size: 36px;
+}
+.footer-section{
+    color: white;
 }

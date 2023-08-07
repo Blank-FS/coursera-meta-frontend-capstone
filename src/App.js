@@ -41,7 +41,7 @@ function App() {
   const [formData, setFormData] = useState({
     date: '',
     time: '- Choose -',
-    guests: 0,
+    guests: '',
     occasion: '- Choose -',
 });
 

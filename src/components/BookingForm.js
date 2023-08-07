@@ -31,7 +31,14 @@ export default function BookingForm(props){
     const handleSubmit = (e) => {
         e.preventDefault();
         if (isFormValid()) {
-            submitForm(formData);
+          setFormData(
+            {
+              date: '',
+              time: '- Choose -',
+              guests: '',
+              occasion: '- Choose -',
+          });
+          submitForm(formData);
         }
     };
     const handleClick = () => {
@@ -86,12 +93,12 @@ export default function BookingForm(props){
     };
     //Return
     return(
-        <form style={{display: 'grid', maxWidth: '200px', gap: '20px'}} onSubmit={handleSubmit}>
-            <label htmlFor="res-date">Choose date</label>
+        <form style={{display: 'grid', minWidth: '60vw', gap: '20px'}} onSubmit={handleSubmit}>
+            <label htmlFor="res-date">Date</label>
             <input type="date" id="res-date" name="date" value={formData.date} onChange={handleChange} required onBlur={handleBlur}/>
             {isDateTouched && !isDateValid && <span style={{ color: 'red' }}>*Please Choose a Date.</span>}
             <div>
-                <h1>Available Times</h1>
+                <h1 class="availableTimes">Available Times</h1>
                 <ul>
                     {availableTimes.map((time, index) => (
                     <li key={index}>{time}</li>
@@ -116,7 +123,7 @@ export default function BookingForm(props){
                 <option>Anniversary</option>
             </select>
             {isOccasionTouched && !isOccasionValid && <span style={{ color: 'red' }}>*Please Select an Occassion.</span>}
-            <input type="submit" value="Reserve" onClick={handleClick} aria-label="On Click"/>
+            <input type="submit" value="Reserve" onClick={handleClick} aria-label="On Click" id="reserve-button"/>
             { (isDateTouched && isTimeTouched && isGuestsTouched && isOccasionTouched) && !(isDateValid && isTimeValid && isGuestsValid && isOccasionValid) && <span style={{ color: 'red' }}>*Please Submit Valid Form.</span>}
         </form>
     );
